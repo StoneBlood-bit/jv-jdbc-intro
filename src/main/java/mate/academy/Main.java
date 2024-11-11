@@ -14,7 +14,6 @@ public class Main {
         initializeDatabaseScript();
 
         BookDao bookDao = (BookDao) injector.getInstance(BookDao.class);
-
         Book redBook = new Book();
         redBook.setTitle("Red Book");
         redBook.setPrice(BigDecimal.valueOf(50));
